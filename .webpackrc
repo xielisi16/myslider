@@ -1,0 +1,26 @@
+{
+    "extraBabelPlugins": [
+    ["import", {
+      "libraryName": "antd",
+      "libraryDirectory": "es",
+      "style": true
+    }]
+  ],
+ 
+  "theme": "./src/theme.js",
+
+   "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr"
+      ]
+    }
+  },
+
+  "proxy": {
+    "/api": {
+      "target": "http://sfactory.minishebei.com",
+      "changeOrigin": true
+    }
+  }
+}
